@@ -23,8 +23,8 @@ body {
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 30px;
     backdrop-filter: blur(30px);
-    transform: scale(0);
-    animation: zoom-in 1s ease forwards;
+    transform: scale(1);
+    animation: none;
 }
 
 @keyframes zoom-in{
@@ -46,10 +46,9 @@ header {
 }
 
 .animated {
-    transform:  translateY(30px);
-    opacity: 0;
-    animation: slide-in 1s ease forwards;
-    animation-delay: 1s;
+    transform: none !important;
+    opacity: 1 !important;
+    animation: none !important;
 }
 
 @keyframes slide-in {
